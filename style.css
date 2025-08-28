@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.switch-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8e8e8;
+  margin: 8px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.switch-row a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 70px; /* spazio per l'immagine ON/OFF */
+  position: relative;
+}
+
+/* -------------------- RELÈ 1 -------------------- */
+#relais1.on::after {
+  content: "";
+  position: absolute;
+  right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais1.off::after {
+  content: "";
+  position: absolute;
+  right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/TYG5vqkG/1-SIRENA-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- RELÈ 2 -------------------- */
+#relais2.on::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais2.off::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- RELÈ 3 -------------------- */
+#relais3.on::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/1XFh3qJZ/3-ANTIFURTO-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais3.off::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/gJQbpDyD/1-ANTIFURTO-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- RELÈ 4 -------------------- */
+#relais4.on::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais4.off::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- RELÈ 5 -------------------- */
+#relais5.on::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/3xfkpM3J/5-BLUETOOTH-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais5.off::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/QddBHNGy/5-BLUETOOTH-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- RELÈ 6 -------------------- */
+#relais6.on::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/MGhXPycC/6-SWITCH-ATX-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais6.off::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/JhyG5Th3/6-SWITCH-ATX-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- RELÈ 7 -------------------- */
+#relais7.on::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/sxzxys4K/7-COMPUTER-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais7.off::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/MTVHhvVv/7-COMPUTER-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- RELÈ 8 -------------------- */
+#relais8.on::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/FFb1pkh6/8-SPINA-ON.png') no-repeat center center;
+  background-size: contain;
+}
+#relais8.off::after {
+  content: "";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 26px;
+  background: url('https://i.postimg.cc/zvkBG6dN/8-SPINA-OFF.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* -------------------- BOTTONE ESCI -------------------- */
+#logout {
+  display: block;
+  text-align: center;
+  background: url('https://i.postimg.cc/B6nKrXQM/ESCI.png') no-repeat center center;
+  background-size: contain;
+  color: transparent;
+  font-size: 0;
+  height: 50px;
+  margin-top: 20px;
+}
